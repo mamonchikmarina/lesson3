@@ -7,15 +7,15 @@
 """
 
 from random import randint
-M = 10
-List_1 = [0] * M
-for i in range (M):
-    List_1[i] = randint(1, 50)
+N = int(input('Введите количество элементов в массиве = '))
+List_1 = [0] * N
+for i in range (N):
+    List_1[i] = randint(1, 20)
 print(List_1)
-N = int(input('Введите число N из списка = '))
+K = int(input('Введите число K из списка = '))
 res = 0
 for i in range(len(List_1)):
-    if List_1[i] == N:
+    if List_1[i] == K:
         res += 1
 print(res)
 
